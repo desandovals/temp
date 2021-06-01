@@ -24,7 +24,7 @@ Fijarnos en las tarjeta de red que no tenga ip asociada.
 
 ```
 ens192: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
-        inet 172.16.202.198  netmask 255.255.255.224  broadcast 172.16.202.223
+        inet 10.10.10.1  netmask 255.255.255.224  broadcast 10.10.10.223
         inet6 fe80::250:56ff:feae:7ab5  prefixlen 64  scopeid 0x20<link>
         ether 00:50:56:ae:7a:b5  txqueuelen 1000  (Ethernet)
         RX packets 1333090  bytes 1096016860 (1.0 GiB)
@@ -68,11 +68,11 @@ NETMASK="255.255.255.0"
 DEVICE="<nombre_tarjeta>"   ### Sustituir <nombre_tarjeta>
 ```
 
-**Del ejemplo anterior, quedaría como lo siguiente, suponiendo que quisieramos configurar la IP `192.27.203.250` y el nombre de la tarjeta sea `ens224`:** 
+**Del ejemplo anterior, quedaría como lo siguiente, suponiendo que quisieramos configurar la IP `10.1.1.3` y el nombre de la tarjeta sea `ens224`:** 
 
 ```
 BOOTPROTO="static"
-IPADDR="192.27.203.250"
+IPADDR="10.1.1.3"
 NETMASK="255.255.255.0"
 DEVICE="ens224"
 ```
